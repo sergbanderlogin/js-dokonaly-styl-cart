@@ -118,8 +118,8 @@ footer {
 }
 
 .product img {
-    max-height: auto;
     max-width: 100%;
+    height: auto;
     /*margin-top: 2rem;*/
 }
 
