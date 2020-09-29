@@ -23,12 +23,18 @@ a:hover {
 }
 
 button {
+    cursor: pointer;
+}
+
+input,
+button {
     font: 1rem helvetica;
     padding: 1rem;
     border: 0.1rem solid #808080;
     border-radius: 0.5rem;
 }
 
+input:hover,
 button:hover {
     border: 0.1rem solid #404040;
     cursor: pointer;
@@ -118,8 +124,8 @@ footer {
 }
 
 .product img {
+    /*max-height: auto;*/
     max-width: 100%;
-    height: auto;
     /*margin-top: 2rem;*/
 }
 
@@ -245,22 +251,57 @@ footer {
 .cart-image {
     flex: 1 1;
 }
+
 .cart-name {
     flex: 8 1;
 }
+
 .cart-price {
     flex: 1 1;
     text-align: right;
 }
+
 .cart-name > div {
     padding: 1rem;
 }
+
 .cart-list h3 {
     margin: 0;
 }
+
 .cart-list button,
 .cart-list select {
     font-size: 1.3rem;
 }
 
 
+/*  Form  */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    padding: 2rem;
+    border: 0.1rem #c0c0c0 solid;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    list-style-type: none;
+}
+
+.form-items li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+}
